@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>week3 07</title>
+    
+</head>
+<body>
+    <div class="overlay">
+        <h1>Polar Bear</h1>
+        <span>snow life</span>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="nav">
+            <div class="logo">
+                <h1>
+                    <span>polar<br>bear</span>
+                    <br>
+                    snow life
+                </h1>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li>home</li>
+                    <li>snow life</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+    
+            <div class="scrolldown">scroll</div>
+        </div>
+
+        <div class="text">
+            <div class="title">polar bear</div>
+            <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Mollitia, error.</p>
+        </div>
+
+        <div class="watchnow">
+            <a href="#">watch now!</a>
+        </div>
+
+        <div class="media">
+            <ul>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/instagram.svg" alt="ig"></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/twitter.svg" alt="twitter"></li>
+                <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/facebook.svg" alt="facebook"></li>
+            </ul>
+        </div>
+
+        <div class="ellipse-container">
+            <div class="ellipse thin"></div>
+            <div class="ellipse thick"></div>
+            <div class="ellipse yellow"></div>
+            <div class="circle1"><span>Lorem, ipsum dolor</span></div>
+            <div class="circle2"><span>Lorem ipsum dolor sit amet.</span></div>
+        </div>
+    </div>
+    <script>
+        TweenMax.to(".overlay h1", 2, {
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to(".overlay span", 2, {
+            delay: .3,
+            opacity: 0,
+            y: -60,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.to(".overlay", 2, {
+            delay: 1,
+            top: "-100%",
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".ellipse-container", 1, {
+            delay: 2,
+            opacity:0,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".yellow", 1, {
+            delay: 3.5,
+            opacity:0,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".circle1", 1, {
+            delay: 2.4,
+            opacity:0,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".circle2", 1, {
+            delay: 2.6,
+            opacity:0,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".logo", 1, {
+            delay: 3,
+            opacity:0,
+            y: -100,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".menu-links ul li", 1, {
+            delay: 3.2,
+            opacity:0,
+            x: -100,
+            ease: Expo.easeInOut
+        },0.08)
+
+        TweenMax.from(".scrolldown", 1, {
+            delay: 3.4,
+            opacity:0,
+            y: 100,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".text .title", 1, {
+            delay: 3,
+            opacity:0,
+            x: 200,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".text p", 1, {
+            delay: 3.2,
+            opacity:0,
+            x: 200,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".watchnow", 1, {
+            delay: 3.4,
+            opacity:0,
+            x: 200,
+            ease: Expo.easeInOut
+        })
+
+
+        TweenMax.staggerFrom(".media ul li", 1, {
+            delay: 3,
+            opacity:0,
+            y: 100,
+            ease: Expo.easeInOut
+        },0.08)
+
+    </script>
+
+</body>
+</html>
